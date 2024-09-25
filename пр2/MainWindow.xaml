@@ -1,0 +1,40 @@
+﻿<Window x:Class="пр2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:пр2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <Grid>
+        
+            <TextBlock FontSize="14">
+                Вычисление площади и объема сферы :
+            </TextBlock>
+
+            <Label Width="90" Height="35" Margin="0,-350,350,0" FontSize="14">
+                Sсф = 4*Pi*R^2
+            </Label>
+
+            <TextBlock Name ="res" Width="90" Height="25" Margin="110,-193,-50,5" FontSize="14">
+
+            </TextBlock>
+            
+            <TextBox Name="n" FontSize="14" Width="40" Height="25" Margin="0,0,331,293"/>
+
+        <Label FontSize="14" Width="30" Height="25" RenderTransformOrigin="-3.217,-0.557" Margin="0,-298,400,0">
+                R =
+            </Label>
+            <Button Content="Расчет:" Click="Button_Click" Width="69" Height="28" Margin="0,-198,10,0"/>
+
+            
+            <Label Width="123" Height="35" Margin="1,-199,310,2" FontSize="14">
+                Vсф = S * R / 3
+            </Label>
+
+            <TextBlock Name ="V" Width="90" Height="25" Margin="110,-155,-50,-31" FontSize="14">
+            </TextBlock>
+
+        
+    </Grid>
+</Window>
